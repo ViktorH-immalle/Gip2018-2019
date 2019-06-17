@@ -1,0 +1,172 @@
+<html>
+    <!DOCTYPE html>
+    <html>
+    <title>Français</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/website.css">
+    <body>
+    
+
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>VH</b> Viktor Hendrickx</a>
+
+        <div class="w3-right w3-hide-small">
+          <a href="../templates/index.html" class="w3-bar-item w3-button">HOME</a>
+          <a href="#about" class="w3-bar-item w3-button">Reportage du photo</a>
+          <a href="#faq" class="w3-bar-item w3-button">FAQ</a>
+          <a href="#projects" class="w3-bar-item w3-button">Archief</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+      <img class="w3-image" src="../images/anthony-delanoix-17551-unsplash 2.0.jpg" alt="Architecture" width="100%" height="800">
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>VH</b></span> <span class="w3-hide-small w3-text-light-grey">Français</span></h1>
+      </div>
+    </header>
+
+    <div class="w3-container w3-padding-64" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Reportage du photo</h3>
+    </div>   
+    <div class="slideshow-container">
+
+      
+      <div class="mySlides fade">
+        <img src="../images/reportage2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="../images/reportage3.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/reportage4.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/reportage5.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/reportage6.JPG" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/reportage7.JPG" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center"> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>  
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+      </script>
+          
+
+      </div>
+    </div>
+
+    <div class="w3-container w3-padding-64" id="faq">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">FAQ</h3>
+      <p class="p1">Bonjour tout le monde dans la FAQ. Ici j'ai noté 4 questions qui sont très utiles quand vous hésitez quand vous voulez installer un programme pour enregistrer votre moniteur. <br> <br> <br>1) Quelle est la différence entre Powerpoint et OBS? <br><br>La différence entre Powerpoint et OBS est que OBS est plus compliqué mais a plus de   qualité. Powerpoint est plus simple et est déjà installé dans chaque pc. Quant à OBS vous devez installer cette application en ligne.<br><br>2) Pouvez-vous enregistrer une caméra?<br><br>Quand vous travaillez avec Powerpoint enregistrer  un caméra n’est pas possible. En OBS vous pouvez utiliser plusieurs caméras. C'est  un de plusieurs avantages de OBS.<br><br>3) Comment est-ce que vous devez installer OBS?<br><br>C’est vraiment simple parce que vous devez seulement surfer vers le site de OBS et quand vous avez surfé au site vous cliquez sur “Download” et OBS va s’installer automatiquement. Après vous devez ajuster quelques paramètres et OBS est prêt.<br><br>4) Vous me conseillez quel programme?<br><br>Quand vous voulez enregistrer de grands projets je vous conseille d’utiliser OBS mais seulement quand vous connaissez un peu d’un ordinateur. Quand vous ne voulez pas compliquer les choses PowerPoint est parfait pour vous. C’est efficace et de bonne qualité. </p>
+      <img class="img3" src="../images/FAQ.png">
+    </div> 
+    
+
+      <div class="w3-container w3-padding-32" id="projects">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Archief</h3>
+        
+      </div>
+
+      <div class="accordion">
+          <ul>
+            <li>
+              <div class="caption"><a href="../templates/it.html">IT</a></div>
+              <a href="../templates/it.html">
+                <img src='../images/kevin-horvat-1354011-unsplash.jpg'/></a>
+            </li>
+            
+            <li>
+                <div class="caption"><a href="../templates/stage.html">Stage</a></div>
+                <a href="../templates/stage.html">
+                  <img src='../images/marvin-meyer-571072-unsplash.jpg'/></a>
+            </li>
+
+            <li>
+              <div class="caption"><a href="../templates/frans.html">Français</a></div>
+              <a href="../templates/frans.html">
+                <img src='../images/anthony-delanoix-17551-unsplash.jpg'/></a>
+            </li>
+          
+            <li>
+              <div class="caption"><a href="../templates/engels.html">English</a></div>
+              <a href="../templates/engels.html">
+                <img src='../images/aron-van-de-pol-218042-unsplash.jpg'/></a>
+            </li>
+
+            <li>
+              <div class="caption"><a href="../templates/nederlands.html">Nederlands</a></div>
+              <a href="../templates/nederlands.html">
+                <img src='../images/vincent-versluis-198649-unsplash.jpg'/></a>
+            </li>
+            
+            <script>
+                alsolike(
+                  "QgaxQP", "Rotate 3D cube",
+                  "zsonr", "USF Student Incubator",
+                  "qFysE", "Import Tumblr Posts"
+                );
+              </script>
+          </ul>
+        </div>
+    </div>
+    
+
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>GitHub: <a href="https://github.com/ViktorH-immalle" title="W3.CSS" target="_blank" class="w3-hover-text-green">klik hier</a></p>
+    </footer>
+    
+    </body>
+    </html>
